@@ -4,6 +4,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
+ * This class represents the first challenge:
+ * Building a stair
  * 
  * @author IgorK
  *
@@ -16,7 +18,7 @@ public class FirstExercise {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("Informe o tamanho da escada (altura e base): ");
+		System.out.print("Type the stair's size: ");
 		try {
 			stairSize = scan.nextInt();
 		} catch(InputMismatchException ex) {

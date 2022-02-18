@@ -5,6 +5,12 @@ import java.util.Arrays;
 
 public class TestString {
 
+	/**
+	 * 
+	 * 
+	 * @param word
+	 * @return
+	 */
 	public int maketest(String word) {
 
 		String stringWithouSpacesAndLowerCase = word.replace("\\s", "").toLowerCase();
@@ -43,9 +49,6 @@ public class TestString {
 			}
 		}
 
-		System.out.println(subStrings);
-		System.out.println(anagrams);
-	
 		return count;
 	}
 

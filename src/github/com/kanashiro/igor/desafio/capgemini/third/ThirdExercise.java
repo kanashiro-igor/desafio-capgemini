@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 
 /**
+ * This class represents the third challenge:
+ * Find how many substring pairs are anagrams
  * 
  * @author IgorK
  *
@@ -17,13 +19,13 @@ public class ThirdExercise {
 		Scanner scan = new Scanner(System.in);
 		TestString anagram = new TestString();
 		
-		System.out.println("Digite uma palavra:");
+		System.out.println("Type a word:");
 		string = scan.nextLine();
 		scan.close();
 		
 		quantAnagrams = anagram.maketest(string);
 		
-		System.out.println("Quantidade de anagramas encontrados: " + quantAnagrams);
+		System.out.println("Number of anagrams found: " + quantAnagrams);
 	}
 
 }

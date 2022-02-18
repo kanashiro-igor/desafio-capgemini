@@ -3,6 +3,8 @@ package github.com.kanashiro.igor.desafio.capgemini.second;
 import java.util.Scanner;
 
 /**
+ * This class represents the second challenge:
+ * Validating a strong password
  * 
  * @author IgorK
  *
@@ -17,16 +19,16 @@ public class SecondExercise {
 		VerifyPassword check = new VerifyPassword();
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Informe uma senha:");
+		System.out.println("Type your password:");
 		password = scan.nextLine();
 		scan.close();
 		
 		
 		isValid = check.checkPassword(password);
 		if (isValid) {
-			System.out.println("Senha informada = forte!");
+			System.out.println("Your password = strong!");
 		} else {
-			System.out.println("Senha informada falta requisitos!");
+			System.out.println("Invalid password!");
 		}
 	}
 

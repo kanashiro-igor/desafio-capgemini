@@ -4,6 +4,12 @@ import java.util.regex.Pattern;
 
 public class VerifyPassword {
 
+	/**
+	 * 
+	 * 
+	 * @param password
+	 * @return
+	 */
 	public boolean checkPassword(String password) {
 
 		char element;
@@ -13,8 +19,8 @@ public class VerifyPassword {
 		boolean hasSpecialSymbols = false;
 
 		if (password.length() < 6) {
-			System.out.println("Senha precisa ter no minimo 6 caracteres! Adicione mais " + (6 - password.length()) + 
-					" caracteres para a senha ter tamanho valido." );
+			System.out.println("Minimum number of characters must be 6! Please add " + (6 - password.length()) + 
+					" more." );
 			return false;
 		}
 		
@@ -34,16 +40,16 @@ public class VerifyPassword {
 		}
 
 		if (!hasLowerCase) {
-			System.out.println("Precisa no minimo uma letra minuscula!");
+			System.out.println("Need at least one lowercase character!");
 		}
 		if (!hasUpperCase) {
-			System.out.println("Precisa no minimo uma letra maiuscula!");
+			System.out.println("Need at least one uppercase character!");
 		}
 		if (!hasNumbers) {
-			System.out.println("Precisa no minimo um numero!");
+			System.out.println("Need at least one numeric character!");
 		}
 		if (!hasSpecialSymbols) {
-			System.out.println("Precisa simbolos especiais!");
+			System.out.println("Need at least one special character!");
 		}
 
 		return (hasLowerCase && hasUpperCase && hasNumbers && hasSpecialSymbols);

@@ -2,6 +2,11 @@ package github.com.kanashiro.igor.desafio.capgemini.first.main;
 
 public class Stair {
 	
+	/**
+	 * 
+	 * 
+	 * @param number
+	 */
 	public void makeStair(int number) {
 		
 		if (number > 0) {
@@ -16,7 +21,7 @@ public class Stair {
 			}
 			
 		} else {
-			System.out.println("Numero precisa ser maior do que zero!");
+			System.out.println("Number needs to be greater than 0!");
 		}
 	}
 }
