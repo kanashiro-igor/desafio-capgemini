@@ -3,7 +3,7 @@ package github.com.kanashiro.igor.desafio.capgemini.first.main;
 public class Stair {
 	
 	/**
-	 * 
+	 * This method builds the stair
 	 * 
 	 * @param number
 	 */

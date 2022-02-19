@@ -1,11 +1,11 @@
-package github.com.kanashiro.igor.desafio.capgemini.second;
+package github.com.kanashiro.igor.desafio.capgemini.second.main;
 
 import java.util.regex.Pattern;
 
 public class VerifyPassword {
 
 	/**
-	 * 
+	 * This method check the password input
 	 * 
 	 * @param password
 	 * @return

@@ -1,4 +1,4 @@
-package github.com.kanashiro.igor.desafio.capgemini.second;
+package github.com.kanashiro.igor.desafio.capgemini.second.main;
 
 import java.util.Scanner;
 

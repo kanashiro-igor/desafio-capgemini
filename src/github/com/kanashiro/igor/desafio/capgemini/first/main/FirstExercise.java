@@ -27,7 +27,6 @@ public class FirstExercise {
 		scan.close();
 		
 		Stair stair = new Stair();
-		
 		stair.makeStair(stairSize);
 	}
 
