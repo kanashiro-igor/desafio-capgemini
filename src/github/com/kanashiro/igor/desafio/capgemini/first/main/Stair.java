@@ -2,6 +2,8 @@ package github.com.kanashiro.igor.desafio.capgemini.first.main;
 
 public class Stair {
 	
+	private String stars;
+
 	/**
 	 * This method builds the stair
 	 * 
@@ -11,17 +13,24 @@ public class Stair {
 		
 		if (number > 0) {
 			
-			String stars = "";
+			stars = "";
 			
 			for(int i = number; i > 0; i--) {
 				
-				stars = String.format("%" + number + "s", stars.concat("*"));
-				System.out.println(stars);				
-				stars = stars.trim();
+				stars = String.format("%" + number + "s", getStars().concat("*"));
+				System.out.println(getStars());				
+				stars = getStars().trim();
 			}
 			
 		} else {
 			System.out.println("Number needs to be greater than 0!");
 		}
+	}
+
+	/**
+	 * @return the stars
+	 */
+	public String getStars() {
+		return stars;
 	}
 }

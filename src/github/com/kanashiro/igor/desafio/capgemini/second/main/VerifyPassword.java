@@ -19,8 +19,8 @@ public class VerifyPassword {
 		boolean hasSpecialSymbols = false;
 
 		if (password.length() < 6) {
-			System.out.println("Minimum number of characters must be 6! Please add " + (6 - password.length()) + 
-					" more." );
+			System.out.println("Minimum number of characters must be 6! Please add " + 
+					(6 - password.length()) + " more." );
 			return false;
 		}
 		

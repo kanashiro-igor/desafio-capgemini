@@ -1,16 +1,20 @@
 package github.com.kanashiro.igor.desafio.capgemini.first.main.test;
 
-import org.junit.Assert;
-import org.junit.platform.commons.annotation.Testable;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@Testable
+import org.junit.jupiter.api.Test;
+
+import github.com.kanashiro.igor.desafio.capgemini.first.main.Stair;
+
+
 public class StairTest {
 
+	@Test
 	public void givenNumber_whenMakeStair_thenPrintStair() {
 		
-		String actualFinalString = new String(new char[6]).replace("\0", "*");
-		String expectedFinalString = new String(new char[6]).replace("\0", "*");
+		Stair stair = new Stair();
+		stair.makeStair(6);
 		
-		Assert.assertEquals(actualFinalString, expectedFinalString);
+		assertEquals("******", stair.getStars());
 	}
 }

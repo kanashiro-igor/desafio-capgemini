@@ -28,6 +28,8 @@ public class FirstExercise {
 		
 		Stair stair = new Stair();
 		stair.makeStair(stairSize);
+		
+		
 	}
 
 }

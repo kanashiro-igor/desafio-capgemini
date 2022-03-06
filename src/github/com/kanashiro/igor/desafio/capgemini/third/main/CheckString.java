@@ -2,22 +2,23 @@ package github.com.kanashiro.igor.desafio.capgemini.third.main;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class CheckString {
 
 	/**
-	 * This method takes all possible substrings from the string input, and then checks to see which pairs
-	 * of substrings form an anagram
+	 * This method takes all possible substrings from the string input, 
+	 * and then checks to see which pairs of substrings form an anagram
 	 * 
 	 * @param word
 	 * @return
 	 */
-	public int maketest(String word) {
+	public int makeTest(String word) {
 
 		String stringWithouSpacesAndLowerCase = word.replace(" ", "").toLowerCase();
-		System.out.println(stringWithouSpacesAndLowerCase);
-		ArrayList<String> subStrings = new ArrayList<String>();
-		ArrayList<String> anagrams = new ArrayList<String>();
+		
+		List<String> subStrings = new ArrayList<String>();
+		List<String> anagrams = new ArrayList<String>();
 		char[] nextSubString = null;
 		char[] currentSubString = null;
 		int count = 0;

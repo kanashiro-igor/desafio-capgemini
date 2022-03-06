@@ -19,6 +19,7 @@ public class ThirdExercise {
 		Scanner scan = new Scanner(System.in);
 		CheckString anagram = new CheckString();
 		
+		System.out.println("Informe uma palavra:");
 		string = scan.nextLine();
 		
 		if (!string.matches("[a-zA-Z]+")) {
@@ -27,7 +28,7 @@ public class ThirdExercise {
 			
 			scan.close();
 			
-			quantAnagrams = anagram.maketest(string);
+			quantAnagrams = anagram.makeTest(string);
 			
 			System.out.println("Number of anagrams found: " + quantAnagrams);
 		}
